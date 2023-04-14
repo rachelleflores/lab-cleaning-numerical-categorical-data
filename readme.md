@@ -33,3 +33,16 @@ You should also delete the column `customer_id` before you can try to use a for 
 # Lab | Cleaning categorical data (CONTINUED)
 11. Plot every categorical variable. What can you see in the plots? Note that in the previous lab you used a bar plot to plot categorical data, with each unique category in the column on the x-axis and an appropriate measure on the y-axis. However, this time you will try a different plot. This time in each plot for the categorical variable you will have, each unique category in the column on the x-axis and the target(which is numerical) on the Y-axis
 12. For the categorical data, check if there is any data cleaning that need to perform. Hint: You can use the function value_counts() on each of the categorical columns and check the representation of different categories in each column. Discuss if this information might in some way be used for data cleaning.
+
+# Lab | Data cleaning and wrangling (CONTINUED)
+For this lab, we will be using the same dataset we used in the previous labs. We recommend using the same notebook since you will be reusing the same variables you previous created and used in labs.
+
+### Instructions
+So far we have worked on EDA. This lab will focus on data cleaning and wrangling from everything we noticed before.
+
+1. We will start with removing outliers. So far, we have discussed different methods to remove outliers. Use the one you feel more comfortable with, define a function for that. Use the function to remove the outliers and apply it to the dataframe.
+2. Create a copy of the dataframe for the data wrangling.
+3. Normalize the continuous variables. You can use any one method you want.
+4. Encode the categorical variables
+5. The time variable can be useful. Try to transform its data into a useful one. Hint: Day week and month as integers might be useful.
+6. Since the model will only accept numerical data, check and make sure that every column is numerical, if some are not, change it using encoding. Hint for Categorical Variables.
